@@ -1,0 +1,467 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Outfit";
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  /* font-synthesis: none; */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #242424;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* Profile.jsx */
+
+/* Basic styling for the image */
+
+@keyframes image-rise {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+    filter: blur(5px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 1030px) {
+  .position-format {
+    margin-top: 10rem;
+    margin-bottom: -2rem;
+  }
+}
+
+/* Add this to your global CSS or a CSS module */
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.wave-animation {
+  display: inline-block;
+  animation: wave 3s ease-out; /* 3s duration and runs once */
+}
+
+.profile-image {
+  width: 30rem;
+  height: 30rem;
+  object-fit: cover; /* Ensure the image covers the element */
+  animation: image-rise 2s ease-out forwards;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .profile-image {
+    width: 25rem;
+    height: 25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-image {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+/* Profile.jsx */
+
+/* Header.jsx */
+
+/* Header styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1rem 0.5rem;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo img {
+  height: 100px; /* Adjust as needed */
+  margin-right: 1rem; /* Spacing between image and text */
+}
+
+.header-logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.header-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition: color 0.3s;
+}
+
+.header-nav-submenu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.header-nav-submenu a {
+  color: white;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.header-nav-submenu a:hover {
+  color: #f0f0f0;
+}
+
+.header-nav-submenu .active-link {
+  color: brown;
+}
+
+.header-nav-submenu .active-link:hover {
+  color: brown;
+}
+
+.header-nav-submenu a:hover {
+  color: #cac7c7;
+}
+
+.header-nav a:hover {
+  color: #cac7c7;
+}
+
+.header-nav .active-link {
+  color: brown;
+  border-bottom: 2px solid white;
+}
+
+.header-nav .active-link:hover {
+  color: brown;
+  border-bottom: 2px solid white;
+}
+
+/* Container for social media icons */
+.social-icons {
+  display: inline-flex;
+  align-items: center;
+  margin-left: auto; /* Adjust as needed */
+  margin-top: 1rem; /* Adjust as needed */
+}
+
+/* Social media icons */
+.social-icons a {
+  color: gray;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Floating effect on hover */
+.social-icons a:hover {
+  color: #000; /* Change color on hover */
+  transform: translateY(-10px); /* Float effect */
+}
+
+/* Header.jsx */
+
+/* Footer.jsx */
+
+/* Footer styling */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; /* Background color of the footer */
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Footer content alignment */
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footer .footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer-right a {
+  margin-left: 1rem; /* Adjust spacing between icons */
+}
+
+/* Optional: Adjust text color for links */
+.footer .footer-left a,
+.footer .footer-right a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer .footer-left a:hover,
+.footer .footer-right a:hover {
+  color: #f0f0f0;
+}
+
+/* Footer.jsx */
+
+/* Cube.jsx */
+
+.cube-container {
+  perspective: 1000px;
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+  width: 200px; /* Adjust size as needed */
+  height: 200px; /* Adjust size as needed */
+}
+
+.cube {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: rotateCube 10s infinite linear;
+}
+
+.cube-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ccc;
+}
+
+.cube-face img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Positioning each face of the cube */
+.cube .front {
+  transform: translateZ(100px);
+}
+
+.cube .back {
+  transform: rotateY(180deg) translateZ(100px);
+}
+
+.cube .left {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+.cube .right {
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+.cube .top {
+  transform: rotateX(90deg) translateZ(100px);
+}
+
+.cube .bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+/* Animation for the cube */
+@keyframes rotateCube {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+/* Cube.jsx */
+
+/* About.jsx */
+
+/* .about-container {
+  min-height: 100vh;
+  position: relative;
+} */
+
+.cube-container {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 200px;
+  height: 200px;
+}
+
+/* About.jsx */
+
+/* TechList */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.tech-list li {
+  opacity: 0;
+}
+
+/* TechList */
+
+/* Scroll */
+
+/* Webkit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background color of the scrollbar track */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scrollbar thumb on hover */
+}
+
+/* Firefox */
+.scrollable-element {
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: #888 #f1f1f1; /* Scrollbar color and track color */
+}
+
+.scrollable-element::-webkit-scrollbar {
+  width: 12px; /* Chrome, Safari */
+}
+
+.scrollable-element::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.scrollable-element::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.scrollable-element::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Scroll */
+
+/* Contact.jsx */
+
+.whatsapp-format {
+  text-align: center;
+  display: ruby-text;
+}
+
+/* Contact.jsx */
