@@ -46,7 +46,7 @@ const Contact = () => {
               <strong>Contact Number:</strong> +91-8240167057
             </p>
             <p className="text-lg text-gray-800">
-              <strong>Hobbies:</strong> Painting, Cooking, Technical Writing
+              <strong>Hobbies:</strong> Painting, Gardening, Reading Books
             </p>
           </div>
 
