@@ -23,11 +23,11 @@ const Certificate = () => {
         <title>Article</title>
         <meta
           name="description"
-          content="Explore Souvik Mitra's certificate details"
+          content="Explore Soham Guha's certificate details"
         />
         <link
           rel="canonical"
-          href="https://thecodemitter.netlify.app/certificate"
+          href="https://thesohamguha.netlify.app/certificate"
         />
       </Helmet>
       <div className="container mx-auto p-6 mt-20 mb-20">

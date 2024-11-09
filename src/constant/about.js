@@ -7,11 +7,11 @@ const about = {
     social: [
       {
         key: "linkedin",
-        value: "https://www.linkedin.com/in/mitra-souvik/",
+        value: "https://www.linkedin.com/",
       },
       {
         key: "instagram",
-        value: "https://www.instagram.com/thecodemitter/",
+        value: "https://www.instagram.com/call_me_.soham/",
       },
       {
         key: "github",

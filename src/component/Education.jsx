@@ -11,10 +11,10 @@ const Education = () => {
   return (
     <> 
         <title>Education</title>
-        <meta name="description" content="Explore Souvik Mitra's projects" />
+        <meta name="description" content="Explore Soham Guha's projects" />
         <link
           rel="canonical"
-          href="https://thecodemitter.netlify.app/project"
+          href="https://thesohamguha.netlify.app/project"
         />
       <div className="container mx-auto p-6 mt-20 mb-20 text-white">
         <h1 className="text-4xl font-bold text-center mb-8">

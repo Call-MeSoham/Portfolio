@@ -25,11 +25,11 @@ const Contact = () => {
         <title>Article</title>
         <meta
           name="description"
-          content="Explore Souvik Mitra's contact page"
+          content="Explore Soham Guha's contact page"
         />
         <link
           rel="canonical"
-          href="https://thecodemitter.netlify.app/contact"
+          href="https://thesohamguha.netlify.app/contact"
         />
       </Helmet>
       <div className="flex flex-col lg:flex-row p-8 bg-gray-50 mt-20 mb-20 rounded-lg w-full">
@@ -58,13 +58,6 @@ const Contact = () => {
               className="flex items-center text-lg text-green-600 hover:text-green-500 transition-colors whatsapp-format"
             >
               <FaWhatsapp className="mr-3 text-2xl" /> Connect on WhatsApp
-            </a>
-            <br />
-            <a
-              href="https://topmate.io/embed/profile/souvikmitra?theme=D5534D"
-              target="_blank"
-              className="text-white bg-black"
-            >
             </a>
           </div>
           <div className="lg:w-full mt-8 lg:mt-0 rounded-lg">

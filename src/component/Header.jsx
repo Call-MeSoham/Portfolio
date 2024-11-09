@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
-// import profileLogo from "../assets/Souvik_Mitra_logo.png";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
 
@@ -29,14 +28,6 @@ const Header = () => {
     <header className="header flex items-center justify-between p-4 bg-gray-900 text-white">
       <div className="header-logo flex items-center">
         <Link to="/" className="flex items-center text-white hover:text-white">
-          {/* <img
-            src={profileLogo}
-            alt="Logo"
-            loading="eager"
-            title="thecodemitter logo"
-            height="100px"
-            width="100px"
-          /> */}
           <span className="ml-2 text-xl font-bold">{t("welcome")}</span>
         </Link>
       </div>

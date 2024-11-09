@@ -15,9 +15,9 @@ const Profile = () => {
         <title>Profile</title>
         <meta
           name="description"
-          content="Explore Souvik Mitra's Profile page"
+          content="Explore Soham Guha's Profile page"
         />
-        <link rel="canonical" href="https://thecodemitter.netlify.app/" />
+        <link rel="canonical" href="https://thesohamguha.netlify.app/" />
       </Helmet>
       <div className="container mx-auto p-6 position-format">
         <div className="flex flex-col lg:flex-row items-center h-screen p-4 lg:p-8">
@@ -54,7 +54,7 @@ const Profile = () => {
               alt="Profile"
               className="profile-image rounded-full"
               loading="eager"
-              title="Souvik Mitra (THECODEMITTER) profile picture"
+              title="Soham Guha profile picture"
               height="300px"
               width="300px"
             />
